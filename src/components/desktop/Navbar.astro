@@ -3,31 +3,38 @@ import "../../styles/global.css";
 import Logo from "../../../public/svg/Logo-icon.svg";
 ---
 
-<nav class="py-4 fixed top-0 w-full  shadow-md z-10">
-  <div class="container mx-auto flex items-center justify-between px-6">
-    <a href="#Hero" class="flex items-center">
-      <img src={Logo.src} alt="Logo" class="h-10 w-auto mr-6" />
-    </a>
-    <ul class="flex text-xl space-x-6 font-AgencyFB">
-      <li><a href="#Resumen" class="block py-2 md:inline-block">Resumen</a></li>
-      <li>
-        <a href="#Certificaciones" class="block py-2 md:inline-block">Certificaciones</a>
-      </li>
-      <li>
-        <a href="#Contacto" class="block py-2 md:inline-block">Contacto</a>
-      </li>
-    </ul>
-  </div>
+<nav class="py-4 fixed top-0 w-full shadow-md z-10">
+    <div class="container mx-auto flex items-center justify-between px-6">
+        <a href="#Hero" class="flex items-center">
+            <img src={Logo.src} alt="Logo" class="h-10 w-auto mr-6" />
+        </a>
+        <ul class="flex text-xl space-x-6 font-AgencyFB">
+            <li>
+                <a href="#Resumen" class="block py-2 md:inline-block"
+                    >Resumen</a>
+            </li>
+            <li>
+                <a href="#Certificaciones" class="block py-2 md:inline-block"
+                    >Certificaciones</a
+                >
+            </li>
+            <li>
+                <a href="#Contacto" class="block py-2 md:inline-block"
+                    >Contacto</a
+                >
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <style>
-  .font-AgencyFB {
-    font-family: "AgencyFB bold", sans-serif;
-  }
-  /* En tu archivo global.css */
-nav {
-  background-image: url('../../public/svg/background.svg');
-  background-repeat: no-repeat; /* Para evitar que la imagen se repita */
-  background-size: cover; /* Para que la imagen cubra todo el fondo */
-}
+    .font-AgencyFB {
+        font-family: "AgencyFB bold", sans-serif;
+    }
+    /* En tu archivo global.css */
+    nav {
+        background-image: url("../../public/svg/background.svg");
+        background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+        background-size: cover; /* Para que la imagen cubra todo el fondo */
+    }
 </style>
