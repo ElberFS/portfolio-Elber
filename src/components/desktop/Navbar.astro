@@ -1,0 +1,27 @@
+---
+import "../../styles/global.css";
+import Logo from "../../../public/svg/Logo-icon.svg";
+---
+
+<nav class="py-4">
+    <div class="container mx-auto flex items-center justify-between px-6">
+        <a href="#Hero" class="flex items-center">
+            <img src={Logo.src} alt="Logo" class="h-18 w-auto mr-6" />
+        </a>
+        <ul class="flex text-xl space-x-6 font-AgencyFB">
+            <li><a href="#Resumen" >Resumen</a></li>
+            <li>
+                <a href="#Certificaciones" >Certificaciones</a>
+            </li>
+            <li>
+                <a href="#Contacto" >Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<style>
+    .font-AgencyFB {
+        font-family: "AgencyFB bold", sans-serif;
+    }
+</style>

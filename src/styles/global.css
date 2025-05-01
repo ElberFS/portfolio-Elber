@@ -1,0 +1,17 @@
+
+
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'AgencyFB Regular';
+    src: url('/fonts/agencyfb_reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AgencyFB Bold';
+    src: url('/fonts/agencyfb_bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

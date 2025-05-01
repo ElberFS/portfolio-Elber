@@ -1,0 +1,127 @@
+---
+import "../../styles/global.css";
+import Image from "../../../public/images/imagen-Hero.png";
+import LinkedinIcon from "../../../public/svg/linkedin.svg";
+import GithubIcon from "../../../public/svg/github.svg";
+import EmailIcon from "../../../public/svg/email.svg";
+import WhatsappIcon from "../../../public/svg/whatsapp.svg";
+import Curriculum from "../../../public/pdf/curriculum.pdf";
+---
+
+<section id="Hero" class="py-20">
+    {/* Sección principal de presentación del héroe */}
+    <div class="container mx-auto mt-15 text-center">
+        {/* Contenedor para el texto principal (nombre y título) */}
+        <div>
+            <h1 class="font-AgencyFB-bold text-9xl text-black mb-4">
+                ELBER JESÚS
+            </h1>
+            <p class="text-2xl font-AgencyFB-regular text-gray-600 mb-12">
+                Ingeniero Computación e Informática
+            </p>
+        </div>
+
+        {/* Contenedor para los botones de acción principales */}
+        <div
+            class="flex justify-center font-AgencyFB-regular text-xl space-x-6 mb-12"
+        >
+            {/* Enlace para descargar el currículum */}
+            <a
+                href="/pdf/curriculum.pdf"
+                download="Curriculum_Vitae.pdf"
+                class="bg-gray-300 text-black py-3 px-8 inline-block transform transition duration-300 hover:scale-105 hover:-translate-y-1"
+            >
+                Curriculum Vitae
+            </a>
+
+            {/* Enlace para contactar (abre en una nueva pestaña) */}
+            <a
+                href="https://wa.link/c52d6z1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block transform transition duration-300 hover:scale-105 hover:-translate-y-1"
+            >
+                <button class="border-2 border-black text-gray-800 py-3 px-8">
+                    Contacto
+                </button>
+            </a>
+        </div>
+
+        {
+            /* Contenedor para los íconos de redes sociales e imagen decorativa (oculto en pantallas pequeñas) */
+        }
+        <div class="hidden md:relative p-2 md:flex mt-40">
+            {/* Contenedor para los enlaces a las redes sociales */}
+            <div class="flex space-x-5">
+                {/* Enlace a WhatsApp */}
+                <a
+                    href="https://wa.link/c52d6z"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:scale-125 transition-transform"
+                >
+                    <img
+                        src={WhatsappIcon.src}
+                        alt="WhatsApp"
+                        class="h-9 w-9 grayscale hover:grayscale-0"
+                    />
+                </a>
+                {/* Enlace a LinkedIn */}
+                <a
+                    href="https://www.linkedin.com/in/elber-jesus-quiroz-coronel-578021288"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:scale-125 transition-transform"
+                >
+                    <img
+                        src={LinkedinIcon.src}
+                        alt="LinkedIn"
+                        class="h-9 w-9 grayscale hover:grayscale-0"
+                    />
+                </a>
+                {/* Enlace a GitHub */}
+                <a
+                    href="https://github.com/ElberFS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:scale-125 transition-transform"
+                >
+                    <img
+                        src={GithubIcon.src}
+                        alt="GitHub"
+                        class="h-9 w-9 grayscale hover:grayscale-0"
+                    />
+                </a>
+                {/* Enlace para enviar un correo electrónico */}
+                <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=elberjesus09@gmail.com"
+                    class="hover:scale-125 transition-transform"
+                    target="_blank"
+                >
+                    <img
+                        src={EmailIcon.src}
+                        alt="Email"
+                        class="h-9 w-9 grayscale hover:grayscale-0"
+                    />
+                </a>
+            </div>
+
+            {/* Imagen decorativa posicionada en la esquina inferior derecha */}
+            <img
+                src={Image.src}
+                alt="Decoración"
+                class="absolute h-70 w-70 right-0 bottom-0"
+            />
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Estilos para las fuentes personalizadas */
+    .font-AgencyFB-regular {
+        font-family: "AgencyFB regular", sans-serif;
+    }
+    .font-AgencyFB-bold {
+        font-family: "AgencyFB bold", sans-serif;
+    }
+</style>

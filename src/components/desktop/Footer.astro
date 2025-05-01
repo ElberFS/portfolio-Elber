@@ -1,0 +1,122 @@
+---
+import "../../styles/global.css";
+import Image from "../../../public/images/imagen-Footer.png";
+import LinkedinIcon from "../../../public/svg/linkedin.svg";
+import GithubIcon from "../../../public/svg/github.svg";
+import EmailIcon from "../../../public/svg/email.svg";
+import WhatsappIcon from "../../../public/svg/whatsapp.svg";
+---
+
+<style>
+    /* Estilos para las fuentes personalizadas */
+    .font-AgencyFB-regular {
+        font-family: "AgencyFB regular", sans-serif;
+    }
+    .font-AgencyFB-bold {
+        font-family: "AgencyFB bold", sans-serif;
+    }
+</style>
+
+<section id="Contacto">
+    {/* Sección de contacto y pie de página */}
+    <footer class="bg-white mt-8 py-8 px-12">
+        {
+            /* Contenedor principal con un ancho máximo y centrado, utilizando una grilla de dos columnas en pantallas medianas y grandes */
+        }
+        <div
+            class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+        >
+            {
+                /* Columna izquierda con información de contacto y enlaces a redes sociales */
+            }
+            <div>
+                <h1 class="font-AgencyFB-bold text-7xl mb-4">ELBERDEV</h1>
+                <p
+                    class="font-AgencyFB-regular text-xl italic text-gray-600 mb-8"
+                >
+                    "Primero, resuelve el problema. Luego, escribe el código."
+                    <br />
+                    <span class="block text-lg font-normal">John Johnson</span>
+                </p>
+                {/* Contenedor para los íconos de redes sociales */}
+                <div class="flex space-x-5 mt-30">
+                    <a
+                        href="https://wa.link/c52d6z"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:scale-125 transition-transform"
+                    >
+                        <img
+                            src={WhatsappIcon.src}
+                            alt="WhatsApp"
+                            class="h-9 w-9 grayscale hover:grayscale-0"
+                        />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/elber-jesus-quiroz-coronel-578021288"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:scale-125 transition-transform"
+                    >
+                        <img
+                            src={LinkedinIcon.src}
+                            alt="LinkedIn"
+                            class="h-9 w-9 grayscale hover:grayscale-0"
+                        />
+                    </a>
+                    <a
+                        href="https://github.com/ElberFS"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:scale-125 transition-transform"
+                    >
+                        <img
+                            src={GithubIcon.src}
+                            alt="GitHub"
+                            class="h-9 w-9 grayscale hover:grayscale-0"
+                        />
+                    </a>
+                    <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=elberjesus09@gmail.com"
+                        class="hover:scale-125 transition-transform"
+                        target="_blank"
+                    >
+                        <img
+                            src={EmailIcon.src}
+                            alt="Email"
+                            class="h-9 w-9 grayscale hover:grayscale-0"
+                        />
+                    </a>
+                </div>
+            </div>
+
+            {/* Columna derecha con detalles de contacto e imagen decorativa */}
+            <div class="flex flex-col mt-10 justify-between">
+                {/* Información de contacto (email y número de celular) */}
+                <div class="text-xl space-y-4">
+                    <div>
+                        <p class="font-AgencyFB-bold">Email:</p>
+                        <a class="font-AgencyFB-regular"
+                            >elberjesus09@gmail.com</a
+                        >
+                    </div>
+                    <div>
+                        <p class="font-AgencyFB-bold">Número Celular:</p>
+                        <a class="font-AgencyFB-regular">+51 942 105 155</a>
+                    </div>
+                </div>
+
+                {
+                    /* Imagen decorativa (oculta en pantallas pequeñas y medianas) */
+                }
+                <div class="relative mt-50">
+                    <img
+                        src={Image.src}
+                        alt="Ilustración programador"
+                        class="h-60 w-60 absolute bottom-0 right-0 max-w-xs hidden lg:block"
+                    />
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>

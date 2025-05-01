@@ -1,0 +1,167 @@
+---
+import "../../styles/global.css";
+---
+
+<div class="w-full bg-white">
+    {/* Sección de Resumen, Habilidades y Experiencia */}
+    <div id="Resumen" class="max-w-7xl mx-auto p-8">
+        {
+            /* Contenedor principal con una grilla de dos columnas en pantallas medianas y grandes */
+        }
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-50">
+            {
+                /* Columna Izquierda: Resumen, Habilidades Personales y Estudios */
+            }
+            <div>
+                {/* Sección de Resumen */}
+                <h2
+                    class="w-fit font-AgencyFB-bold text-2xl uppercase border-b-2 border-black pb-2 mb-4"
+                >
+                    Resumen
+                </h2>
+                <p class="font-AgencyFB-regular text-xl mb-8">
+                    Ingeniero en Computación e Informática versátil y apasionado
+                    por la construcción de soluciones tecnológicas eficientes e
+                    innovadoras, con sólida formación universitaria en
+                    desarrollo de software y gestión de proyectos.
+                </p>
+
+                {/* Sección de Habilidades Personales */}
+                <h2
+                    class="w-fit font-AgencyFB-bold text-2xl uppercase border-b-2 border-black pb-2 mb-4"
+                >
+                    Habilidades Personales
+                </h2>
+                <div
+                    class="grid text-xl font-AgencyFB-regular grid-cols-2 gap-1 mb-8"
+                >
+                    {/* Mapeo de la lista de habilidades personales */}
+                    {
+                        [
+                            "Pensamiento analítico",
+                            "Adaptabilidad",
+                            "Resolución de problemas",
+                            "Organización",
+                            "Pensamiento lógico",
+                            "Gestión del tiempo",
+                            "Creatividad",
+                            "Proactividad",
+                            "Atención al detalle",
+                            "Responsabilidad",
+                            "Comunicación clara",
+                            "Aprendizaje continuo",
+                            "Trabajo en equipo",
+                            "Resiliencia",
+                        ].map((skill) => <div class="p-1">{skill}</div>)
+                    }
+                </div>
+
+                {/* Sección de Estudios */}
+                <h2
+                    class="w-fit font-AgencyFB-bold text-2xl uppercase border-b-2 border-black pb-2 mb-4"
+                >
+                    Estudios
+                </h2>
+                <div class="space-y-2 text-xl font-AgencyFB-regular">
+                    <h3 class="text-xl font-AgencyFB-bold">
+                        Universidad Nacional Pedro Ruiz Gallo
+                    </h3>
+                    <p class="text-xl font-AgencyFB-regular text-gray-600">
+                        2020 - 2025
+                    </p>
+                    <p class="text-xl font-AgencyFB-regular">
+                        ING. Computación e Informática
+                    </p>
+                </div>
+            </div>
+
+            {/* Columna Derecha: Experiencia Laboral */}
+            <div>
+                <h2
+                    class="w-fit text-2xl font-AgencyFB-bold uppercase border-b-2 border-black pb-2 mb-4"
+                >
+                    Experiencia
+                </h2>
+
+                {/* Contenedor para la lista de experiencias laborales */}
+                <div class="space-y-6 text-xl font-AgencyFB-regular">
+                    {/* Item de Experiencia Laboral 1 */}
+                    <div
+                        class="relative pl-8 before:absolute before:left-2 before:top-0 before:bottom-0 before:w-0.5 before:bg-gray-400"
+                    >
+                        <div></div>
+                        <h3 class="font-AgencyFB-bold">
+                            Universidad Nacional Pedro Ruiz Gallo
+                        </h3>
+                        <p class="text-xl text-gray-600">
+                            01 Sep 2025 - 31 Dic 2025
+                        </p>
+                        <p class="font-semibold">
+                            Cargo: Asistente de Soporte Informático
+                        </p>
+                        <p class="text-gray-700">
+                            Creación de sitio web responsivo para la Oficina de
+                            Cooperación y Relaciones Internacionales
+                            (https://ocyri.unprg.edu.pe/), gestionando
+                            publicaciones y mejorando la comunicación
+                            institucional.
+                        </p>
+                    </div>
+
+                    {/* Item de Experiencia Laboral 2 */}
+                    <div
+                        class="relative pl-8 before:absolute before:left-2 before:top-0 before:bottom-0 before:w-0.5 before:bg-gray-400"
+                    >
+                        <div></div>
+                        <h3 class="font-AgencyFB-bold">
+                            Universidad Nacional Pedro Ruiz Gallo
+                        </h3>
+                        <p class="text-xl text-gray-600">
+                            01 Abr 2024 - 01 Ago 2024
+                        </p>
+                        <p class="font-semibold">
+                            Cargo: Asistente de Soporte Informático - OTI
+                        </p>
+                        <p class="text-gray-700">
+                            Soporte técnico a dependencias académicas y
+                            administrativas, consolidando conocimientos en
+                            desarrollo de actividades técnicas en toda la
+                            Universidad Nacional Pedro Ruiz Gallo.
+                        </p>
+                    </div>
+                    {/* Item de Experiencia Laboral 3 */}
+                    <div
+                        class="relative pl-8 before:absolute before:left-2 before:top-0 before:bottom-0 before:w-0.5 before:bg-gray-400"
+                    >
+                        <div></div>
+                        <h3 class="font-AgencyFB-bold">
+                            Universidad Nacional Pedro Ruiz Gallo
+                        </h3>
+                        <p class="text-xl text-gray-600">
+                            01 Abr 2024 - 01 Ago 2024
+                        </p>
+                        <p class="font-semibold">
+                            Cargo: Asistente de Soporte Informático - FIME
+                        </p>
+                        <p class="text-gray-700">
+                            Soporte técnico a dependencias académicas y
+                            administrativas, consolidando conocimientos en
+                            desarrollo de actividades técnicas. De la facultad
+                            de ingeniería mecánica eléctrica.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilos para las fuentes personalizadas */
+    .font-AgencyFB-regular {
+        font-family: "AgencyFB regular", sans-serif;
+    }
+    .font-AgencyFB-bold {
+        font-family: "AgencyFB bold", sans-serif;
+    }
+</style>

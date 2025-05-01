@@ -1,48 +1,47 @@
-# Astro Starter Kit: Basics
+# Portfolio Personal ✨
 
-```sh
-npm create astro@latest -- --template basics
-```
+Link de FIGMA : https://www.figma.com/design/WNWsy2xuUryrV7JwizA01J/portafolio?node-id=56-3556&t=iHGRlTRRNLXnGVbV-1
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Descripción 📖
+Portafolio personal desarrollado con **Astro** y **Tailwind CSS**, diseñado para mostrar proyectos, habilidades y experiencia de manera moderna y responsiva. Incluye animaciones sutiles, tipografías personalizadas y optimización para SEO.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Tecnologías Principales 🚀
+- **Astro** - Renderizado estático y arquitectura de componentes
+- **Tailwind CSS** - Diseño ágil y personalizable
+- **Font Awesome** - Iconos vectoriales
+- **Responsive Design** - Adaptado para móviles y desktop
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## Características Clave 🎨
+- Navbar interactivo con scroll suave
+- Sección Hero con animación de texto
+- Grid de proyectos con hover effects
+- Formulario de contacto integrado
+- Footer con redes sociales
+- Tipografías personalizadas (Agency FB)
+- Optimización de imágenes con `astro-imagetools`
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+---
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Instalación 🛠️
+1. Clona el repositorio
+   git clone https://github.com/ElberFS/portfolio-Elber.git
 
-## 🧞 Commands
+2. Instalar dependecias 
+    npm install
 
-All commands are run from the root of the project, from a terminal:
+3. Inicia el servidor de desarrollo
+    npm run dev
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Estructura
+    src/
+    ├── components/     # Componentes reutilizables
+    ├── layouts/        # Layouts base (MainLayout)
+    ├── pages/          # Rutas y páginas principales
+    ├── styles/         # Configuración global de Tailwind
+    public/             # Archivos estáticos (imágenes, fuentes)
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+# En edición la sección de proyectos
