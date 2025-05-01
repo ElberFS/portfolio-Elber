@@ -1,50 +1,49 @@
 ---
 import "../../styles/global.css";
+// importacion de pdf de certificaciones
 import certificadoCss from "/pdf/certificadoCss.pdf";
 import certificadoExcelAnalisis from "/pdf/certificadoExcelAnalisis.pdf";
 import certificadoFigma from "/pdf/certificadoFigma.pdf";
 import certificadoMongoDB from "/pdf/certificadoMongoDb.pdf";
 import certificadoPhishing from "/pdf/certificadoPhishing.pdf";
 import certificadoPhp from "/pdf/certificadoPhp.pdf";
+// importacion de imagenes de certificaciones
+import imgCertificadoCss from "../../../public/image/certificados/certificadoCss.jpg";	
+import imgCertificadoExcelAnalisis from "../../../public/image/certificados/certificadoExcelAnalisis.jpg";
+import imgCertificadoFigma from "../../../public/image/certificados/certificadoFigma.jpg";
+import imgCertificadoMongoDB from "../../../public/image/certificados/certificadoMongoDb.jpg";
+import imgCertificadoPhishing from "../../../public/image/certificados/certificadoPhishing.jpg";
+import imgCertificadoPhp from "../../../public/image/certificados/certificadoPhp.jpg";
+
 ---
 
 <section id="Certificaciones" class="max-w-7xl mx-auto px-8 py-12">
-    {/* Sección para la visualización de las certificaciones */}
-    <h2
-        class="text-2xl font-AgencyFB-bold border-b-3 border-black w-fit mb-10 uppercase"
-    >
+    <h2 class="text-2xl font-AgencyFB-bold border-b-3 border-black w-fit mb-10 uppercase">
         Certificaciones
     </h2>
 
-    {/* Contenedor principal para la grilla de certificaciones */}
     <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {/* Mapeo de la lista de objetos de certificación */}
         {
             [
-                { titulo: "CSS", src: certificadoCss },
-                { titulo: "Excel Analisis", src: certificadoExcelAnalisis },
-                { titulo: "Figma", src: certificadoFigma },
-                { titulo: "MongoDB", src: certificadoMongoDB },
-                { titulo: "Phishing", src: certificadoPhishing },
-                { titulo: "PHP", src: certificadoPhp },
-            ].map(({ titulo, src }) => (
-                // Contenedor para cada tarjeta de certificación
+                { titulo: "CSS", src: certificadoCss, img: imgCertificadoCss },
+                { titulo: "Excel Analisis", src: certificadoExcelAnalisis, img: imgCertificadoExcelAnalisis },
+                { titulo: "Figma", src: certificadoFigma, img: imgCertificadoFigma },
+                { titulo: "MongoDB", src: certificadoMongoDB, img: imgCertificadoMongoDB },
+                { titulo: "Phishing", src: certificadoPhishing, img: imgCertificadoPhishing },
+                { titulo: "PHP", src: certificadoPhp, img: imgCertificadoPhp },
+            ].map(({ titulo, src, img }) => (
                 <div class="bg-white shadow rounded-lg overflow-hidden flex flex-col">
-                    {/* Contenedor para el visor del PDF */}
+                    {/* Imagen de vista previa del certificado */}
                     <div class="aspect-w-4 aspect-h-3 w-full">
-                        <embed
-                            src={src}
-                            type="application/pdf"
+                        <img
+                            src={img.src}
+                            alt={`Certificado de ${titulo}`}
                             class="w-full h-full object-contain"
                         />
                     </div>
-                    {/* Contenedor para la información y los enlaces de la certificación */}
                     <div class="p-4 flex flex-col flex-grow">
-                        <h3 class="font-AgencyFB-bold text-lg mb-2">
-                            {titulo}
-                        </h3>
+                        <h3 class="font-AgencyFB-bold text-lg mb-2">{titulo}</h3>
                         <div class="mt-auto flex justify-between">
-                            {/* Enlace para ver la certificación */}
                             <a
                                 href={src}
                                 target="_blank"
@@ -52,11 +51,10 @@ import certificadoPhp from "/pdf/certificadoPhp.pdf";
                             >
                                 Ver
                             </a>
-                            {/* Enlace para descargar la certificación */}
                             <a
                                 href={src}
                                 download
-                                class="bg-gray-300  text-black px-4 py-1  font-AgencyFB-bold"
+                                class="bg-gray-300 text-black px-4 py-1 font-AgencyFB-bold"
                             >
                                 Descargar
                             </a>
@@ -69,7 +67,6 @@ import certificadoPhp from "/pdf/certificadoPhp.pdf";
 </section>
 
 <style>
-    /* Estilos para las fuentes personalizadas */
     .font-AgencyFB-regular {
         font-family: "AgencyFB regular", sans-serif;
     }
@@ -77,3 +74,4 @@ import certificadoPhp from "/pdf/certificadoPhp.pdf";
         font-family: "AgencyFB bold", sans-serif;
     }
 </style>
+

@@ -1,11 +1,11 @@
 ---
 import "../../styles/global.css";
-import Image from "../../../public/images/imagen-Hero.png";
+import Image from "../../../public/image/imagen-hero.png";
 import LinkedinIcon from "../../../public/svg/linkedin.svg";
 import GithubIcon from "../../../public/svg/github.svg";
 import EmailIcon from "../../../public/svg/email.svg";
 import WhatsappIcon from "../../../public/svg/whatsapp.svg";
-import Curriculum from "../../../public/pdf/curriculum.pdf";
+import Curriculum from "/pdf/Curriculum.pdf";
 ---
 
 <section id="Hero" class="py-20">
@@ -27,7 +27,7 @@ import Curriculum from "../../../public/pdf/curriculum.pdf";
         >
             {/* Enlace para descargar el currículum */}
             <a
-                href="/pdf/curriculum.pdf"
+                href={Curriculum}
                 download="Curriculum_Vitae.pdf"
                 class="bg-gray-300 text-black py-3 px-8 inline-block transform transition duration-300 hover:scale-105 hover:-translate-y-1"
             >
