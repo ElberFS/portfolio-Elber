@@ -22,11 +22,31 @@ import imgCertificadoPhp from "../../../public/image/certificados/certificadoPhp
         Certificaciones
     </h2>
 
+    <div class="mb-10 grid gap-4 md:grid-cols-2 font-AgencyFB-regular text-xl">
+        {[
+            { titulo: "PHP 8.0, Laravel y PostgreSQL", detalle: "Diplomado · CETI · enero a marzo de 2024 · 150 horas" },
+            { titulo: "Diseño UX/UI, interacción y prototipado", detalle: "Diplomado · CETI · febrero a abril de 2025 · 150 horas" },
+            { titulo: "Google Workspace for Education Plus", detalle: "UNPRG · junio de 2024 · 24 horas" },
+            { titulo: "Office Intermedio", detalle: "Fundación Telefónica · mayo de 2025 · 25 horas" },
+            { titulo: "Data Communication and Network Technology", detalle: "Huawei Talent Online · marzo de 2024" },
+            { titulo: "Programación en Python desde cero", detalle: "Skilio · marzo de 2025" },
+            { titulo: "Laravel 9 y APIs RESTful", detalle: "Udemy · junio de 2025" },
+            { titulo: "API REST con PHP y MySQL", detalle: "Udemy · abril de 2025" },
+            { titulo: "Oracle Database", detalle: "Udemy · abril de 2025" },
+            { titulo: "Gestión del Tiempo y Productividad", detalle: "UNPRG · abril de 2024 · 16 horas" },
+        ].map(({ titulo, detalle }) => (
+            <article class="border-l-2 border-gray-400 pl-4 py-2">
+                <h3 class="font-AgencyFB-bold">{titulo}</h3>
+                <p class="text-gray-600">{detalle}</p>
+            </article>
+        ))}
+    </div>
+
     <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {
             [
                 { titulo: "CSS", src: certificadoCss, img: imgCertificadoCss },
-                { titulo: "Excel Analisis", src: certificadoExcelAnalisis, img: imgCertificadoExcelAnalisis },
+                { titulo: "Excel: análisis de datos", src: certificadoExcelAnalisis, img: imgCertificadoExcelAnalisis },
                 { titulo: "Figma", src: certificadoFigma, img: imgCertificadoFigma },
                 { titulo: "MongoDB", src: certificadoMongoDB, img: imgCertificadoMongoDB },
                 { titulo: "Phishing", src: certificadoPhishing, img: imgCertificadoPhishing },
@@ -34,11 +54,12 @@ import imgCertificadoPhp from "../../../public/image/certificados/certificadoPhp
             ].map(({ titulo, src, img }) => (
                 <div class="bg-white shadow rounded-lg overflow-hidden flex flex-col">
                     {/* Imagen de vista previa del certificado */}
-                    <div class="aspect-w-4 aspect-h-3 w-full">
+                    <div class="aspect-[4/3] w-full">
                         <img
                             src={img.src}
                             alt={`Certificado de ${titulo}`}
                             class="w-full h-full object-contain"
+                            loading="lazy"
                         />
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
@@ -47,6 +68,7 @@ import imgCertificadoPhp from "../../../public/image/certificados/certificadoPhp
                             <a
                                 href={src}
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 class="text-black underline font-AgencyFB-regular"
                             >
                                 Ver

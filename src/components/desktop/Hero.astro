@@ -13,17 +13,18 @@ import Curriculum from "/pdf/Curriculum.pdf";
     <div class="container mx-auto mt-15 text-center">
         {/* Contenedor para el texto principal (nombre y título) */}
         <div>
-            <h1 class="font-AgencyFB-bold text-9xl text-black mb-4">
+            <h1 class="font-AgencyFB-bold text-6xl sm:text-8xl lg:text-9xl text-black mb-4">
                 ELBER JESÚS
             </h1>
             <p class="text-2xl font-AgencyFB-regular text-gray-600 mb-12">
-                Ingeniero Computación e Informática
+                Bachiller en Ingeniería en Computación e Informática
             </p>
+            <p class="text-xl font-AgencyFB-bold text-gray-800 mb-8 px-4">Desarrollador junior · Interés en oportunidades remotas</p>
         </div>
 
         {/* Contenedor para los botones de acción principales */}
         <div
-            class="flex justify-center font-AgencyFB-regular text-xl space-x-6 mb-12"
+            class="flex flex-wrap gap-4 justify-center font-AgencyFB-regular text-xl mb-12 px-4"
         >
             {/* Enlace para descargar el currículum */}
             <a
@@ -36,14 +37,10 @@ import Curriculum from "/pdf/Curriculum.pdf";
 
             {/* Enlace para contactar (abre en una nueva pestaña) */}
             <a
-                href="https://wa.link/c52d6z1"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-block transform transition duration-300 hover:scale-105 hover:-translate-y-1"
+                href="#Contacto"
+                class="border-2 border-black text-gray-800 py-3 px-8 inline-block transform transition duration-300 hover:scale-105 hover:-translate-y-1"
             >
-                <button class="border-2 border-black text-gray-800 py-3 px-8">
-                    Contacto
-                </button>
+                Contacto
             </a>
         </div>
 
